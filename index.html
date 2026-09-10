@@ -31,9 +31,28 @@
             height: 100px;
             width: 100px;
         }
+        .row1-flags{
+            margin-top: 50px;
+        }
+        .row2-flags{
+            margin-top: 25px;
+        }
+        .row3-flags{
+            margin-top: 25px;
+        }
+        .theme-bth{
+            position: absolute;
+            top: 10px;
+            right: 50px;
+        }
+        .dark-theme {
+            background-color: #000000;
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
+    <button class="theme-bth" onclick="toggleTheme()">Toggle Theme</button>
     <div class="row title">
         <p> ASEAN Wikipedia <p>
     </div>
@@ -72,24 +91,31 @@
             <img src="Flag_of_Malaysia.svg.webp" alt="Flag_of_Malaysia" width="250px" height="150px">
         </div>
         <div class="col placeholder2">
-            <h1>VIETNAM</h1>
-            <img src="Flag_of_Vietnam.svg.webp" alt="Flag_of_Vietnam" width="250px" height="150px">
+            <h1>INDONESIA</h1>
+            <img src="Flag_of_Indonesia.svg.webp" alt="Flag_of_Indonesia" width="250px" height="150px">
         </div>
         <div class="col placeholder3">
-            <h1>MYANMAR</h1>
-            <img src="Flag_of_Myanmar.svg" alt="Flag_of_Myanmar" width="250px" height="150px">
+            <h1>BRUNEI</h1>
+            <img src="Flag_of_Brunei.svg.webp" alt="Flag_of_Brunei" width="250px" height="150px">
         </div>
         <div class="col placeholder4">
-            <h1>MYANMAR</h1>
-            <img src="Flag_of_Myanmar.svg" alt="Flag_of_Myanmar" width="250px" height="150px">
+            <h1>LAOS</h1>
+            <img src="Flag_of_Laos.svg.webp" alt="Flag_of_Laos" width="250px" height="150px">
         </div>
     </div>
+    <div class="row row3-flags">
+        <div class="col placeholder0">
+            <h1>EAST TIMOR</h1>
+            <img src="Flag_of_East_Timor.svg" alt="Flag_of_East_Timor" width="250px" height="150px">
+        </div>
 
 
 
 
     <script>
-
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
     </script>
 </body>
 </html>
